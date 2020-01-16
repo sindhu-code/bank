@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>Account Details</title>
+    <link rel="stylesheet" type="text/css" href="account.css">
+</head>
+<!-- <script src="account.js"></script> -->
+
+
+<body>
+        <img src="images/logo.jpg" class="logo" >
+    <h1>SWISS BANK</h1>
+    <h3>welcome to SWISS BANK</h3>
+    <div class="whitespace1">
+        <fieldset>
+            <legend>
+                <b>ACCOUNT INFORMATION</b>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <Label><b>Deposit</b></Label>
+                        <input type="text" name="deposit" id="deposit" readonly>
+                        <!-- <div  id="deposit" style="width:150px;height:20px;border:1px solid #000;">0000000</div> -->
+
+                    </td>
+
+                    <td><label><b>Available Balance in Novermber Month</b> </label>
+                        <input type="text" name="balance" id="balance" readonly>
+                        <!-- <span id="balance">+00000000</span></td> -->
+
+                    <td>
+                        <Label><b>Withdraw</b></Label>
+                        <input type="text" name="withdraw" id="withdraw" readonly>
+                        <!-- <div id="withdraw"  style="width:150px;height:20px;border:1px solid #000;">0000000</div> -->
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+        <div class="whitespace2">
+        <fieldset>
+            <legend>
+                <b> CUSTOMER DETAILS</b>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <div class="details">
+                            <div> <label><b>CRN</b> :</label>
+                                <label>0123456789</label>
+                                <!-- <input type="number" id="cnr"> -->
+                            </div> <br />
+                            <div> <label><b>Account Number</b> :</label>
+                                <label>9876543210</label>
+                                <!-- <input type="text" id="name"> -->
+                            </div><br />
+                            <div><label><b> Account Holder Name</b> :</label>
+                                <label>Thummaginjala Sreevani</label>
+                                <!-- <input type="number" id="number"> -->
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+        <div class="whitespace3">
+        <fieldset>
+            <legend>
+                <b> TRANSCATION DETAILS</b>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <select name="dropdown" id="select1">
+                            <option value="1">Deposit/Withdraw</option>
+                            <option id="2" value="deposit">Deposit</option>
+                            <option id="3" value="withdraw">Withdraw</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select name="dropdown" id="select2">
+                            <option value="1">cash/Cheque</option>
+                            <option value="2">cash</option>
+                            <option value="3">cheque</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label><b>Amount</b></label>
+                        <input id="amount" type="text" id="amount">
+                    </td>
+
+                    <td>
+                        <button id="submit" type="submit" value="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+    
+        <!-- <div class="whitespace4">
+    <fieldset>
+        <legend>
+            <b>MINI STATEMENT</b>
+        </legend>
+       
+
+    </fieldset>
+
+</div> -->
+
+<section class="ac-container">
+        <div>
+            <input id="ac-1" name="accordion-1" type="checkbox" />
+            <b><label for="ac-1" style="color: blue;">MINI STATEMENT</label></b>
+            <article class="ac-small">
+                <p>
+                        <table id="displaytable" class="displaytable">
+                                <tr tr="ff" class="tr">
+                                    <th td="ff" class="td">Deposit</th>
+                                    <th td="ff" class="td">Withdraw</th>
+                                </tr>
+                        
+                                
+                              
+                            </table>
+                </p>
+            </article>
+        </div>
+    </section>
+
+
+
+    
+
+    <script src="account.js"></script>
+</body>
+
+</html>
